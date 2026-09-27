@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/contact";
 
 const highlights = [
   { label: "Internships", value: "3" },
-  { label: "Projects", value: "5+" },
+  { label: "Projects", value: "20+" },
   { label: "Certifications", value: "7" },
 ];
 
