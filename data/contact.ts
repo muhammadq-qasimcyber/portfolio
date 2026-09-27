@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Muhammad Qasim Azhar",
   role: "AI & Software Developer",
   email: "qasimazhar866@gmail.com",
-  phone: "+923131584056",
+  
   linkedin: "https://linkedin.com/in/muhammad-qasim-azhar-81492a210",
   // Add your GitHub profile URL here once available.
   github: "",
