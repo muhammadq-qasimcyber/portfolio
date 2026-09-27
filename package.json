@@ -2,6 +2,9 @@
   "name": "qasim-azhar-portfolio",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "18.x || 20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +12,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/swc-win32-x64-msvc": "14.2.33",
     "@types/nodemailer": "^8.0.2",
     "framer-motion": "11.3.19",
     "lucide-react": "0.408.0",
