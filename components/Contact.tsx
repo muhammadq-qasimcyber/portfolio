@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { Mail, Phone, Linkedin, Send, Loader2, MapPin } from "lucide-react";
+import { Mail, Linkedin, Send, Loader2, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Toast } from "@/components/ui/Toast";
@@ -99,7 +99,6 @@ export function Contact() {
   }
 
   const mailtoHref = "mailto:" + siteConfig.email;
-  const telHref = "tel:" + siteConfig.phone;
 
   return (
     <section id="contact" className="py-20 sm:py-28 border-t border-base-border">
@@ -130,20 +129,6 @@ export function Contact() {
                     <div>
                       <p className="text-xs text-ink-faint">Email</p>
                       <p className="text-sm">{siteConfig.email}</p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={telHref}
-                    className="flex items-center gap-3 rounded-lg border border-base-border bg-base-surface/50 px-4 py-3 text-ink hover:border-accent-teal/40 hover:text-accent-teal transition-all focus-ring group"
-                  >
-                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-indigo/10 text-accent-indigo group-hover:bg-accent-indigo/20 transition-colors">
-                      <Phone size={18} />
-                    </span>
-                    <div>
-                      <p className="text-xs text-ink-faint">Phone</p>
-                      <p className="text-sm">{siteConfig.phone}</p>
                     </div>
                   </a>
                 </li>
