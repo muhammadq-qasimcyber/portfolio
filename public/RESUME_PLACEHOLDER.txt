@@ -1,0 +1,6 @@
+Add your actual resume PDF here as: public/resume.pdf
+
+The Navbar, Hero, and mobile menu all link to "/resume.pdf". Once you add
+the file at that exact path, the "View Resume" and "Download Resume"
+buttons will work automatically. Delete this placeholder file once your
+resume is in place.

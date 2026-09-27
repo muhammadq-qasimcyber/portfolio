@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #0a0e14;
+  color: #e7edf3;
+}
+
+::selection {
+  background-color: #54e6d2;
+  color: #0a0e14;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232b37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #54e6d2;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(84, 230, 210, 0.16) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid #54e6d2;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Glass morphism utility */
+.glass {
+  background: rgba(16, 21, 29, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #54e6d2 0%, #6e7bf2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow-teal {
+  box-shadow: 0 0 20px rgba(84, 230, 210, 0.15), 0 0 40px rgba(84, 230, 210, 0.05);
+}
+
+.glow-teal-strong {
+  box-shadow: 0 0 30px rgba(84, 230, 210, 0.25), 0 0 60px rgba(84, 230, 210, 0.1);
+}
+
+/* Shimmer overlay */
+.shimmer-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(84, 230, 210, 0.06) 50%, transparent 100%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
